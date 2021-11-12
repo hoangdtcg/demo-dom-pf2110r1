@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input, select {
+        background: transparent;
+        border-radius: 6px;
+        border: 1px solid #5f6368;
+        color: #087aec!important;
+        font-size: 14px !important;
+        height: 36px;
+        padding: 0 0 0 12px;
+    }
+</style>
+<body>
+    <input type="text" onchange="convertMoney()" id="dau-vao">
+    <select id="from-curency">
+        <option value="1">USD</option>
+        <option value="23000">VND</option>
+        <option value="0.86">EURO</option>
+    </select>
+    <br>
+    <br>
+    <input type="text" id="dau-ra">
+    <select id="to-curency">
+        <option value="1">USD</option>
+        <option value="23000">VND</option>
+        <option value="0.86">EURO</option>
+    </select>
+    <p>Số tiền đổi được là</p>
+    <p id="kq"></p>
+    <!-- <button onclick="convertMoney()">Chuyển đổi</button> -->
+</body>
+<script>
+    function convertMoney() {
+        let moneyInput = document.getElementById("dau-vao");
+        let from = document.getElementById("from-curency");
+        let to = document.getElementById("to-curency");
+        let kq = 0;
+        // alert(from.options[from.selectedIndex].text)
+        // alert(from.value);
+        kq = moneyInput.value * to.value / from.value;
+        // alert(kq);
+        // document.write(kq);
+        // console.log(kq);
+        document.getElementById("dau-ra").value = kq;
+        document.getElementById("kq").innerText = kq; //innerHTML
+    }
+
+    let x = 83;
+    let y = 9;
+    x%=y;
+    x = x%y;
+    console.log(x);
+</script>
+</html>

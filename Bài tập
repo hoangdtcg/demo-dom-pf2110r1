@@ -1,0 +1,30 @@
+1. Viết 1 chương trình chuyển đổi tiền tệ, với đầu vào là số tiền, đơn vị tiền tệ chuyển
+và đơn vị tiền tệ muốn chuyển thành:
+VD: => 
+Input: 3 - USD - VND
+Output: 67,937.
+
+B1: Xây dựng giao diện
+B2: Khai báo các biến cần thiết
+    - input
+    - output
+
+
+B3: tiền x tỉ giá = kết quả
+
+tiền/ tỉ giá 1 = kết quả / tỉ giá 2;
+
+3/1 = 69000/23000
+3/1 = 2.59/0.86
+
+2.59/0.86 = 69000/23000 
+
+a/b = c/d
+
+c = a.d/b.
+
+B1: Trỏ đến thẻ đó
+B2: trỏ đến thuộc tính cần thay đổi giá trị
+    - Lấy giá trị của thuộc tính đó
+    - Gán lại giá trị
+B3: dùng toán tử gán

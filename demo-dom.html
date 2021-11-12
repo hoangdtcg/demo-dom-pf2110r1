@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="demo" name="abc" value="def" style="color: black;">
+    <a id="demo-link" href="">Demo Link</a>
+    <h1 id="title">Đây là tiêu đề</h1>
+    <img width="200px" id="traffic-light" src="red.jpeg" alt="">
+
+
+    <script>
+        // let a = document.getElementById("demo");
+        // a.style.color = "red";
+        // // alert(a);
+        // let link = document.getElementById("demo-link");
+        // link.href = "https://google.com";
+
+        // let tag = document.createElement("p");
+        // document.body.append(tag);
+        // tag.innerText = "Tạo thẻ P cho HTML";
+        // tag.setAttribute("id","demo2");
+
+        // tag.addEventListener("click",welcome);
+
+        function changeColor(e) {
+            console.log(e.type)
+            let key = e.key;
+            let title = document.getElementById("title");
+            let trafficLight = document.getElementById("traffic-light");
+            if(key == "a"){
+                title.style.color = "red";
+                title.innerText = "Đèn Đỏ";
+                trafficLight.src = "red.jpeg";
+            }
+            if(key == "d"){
+                title.style.color = "yellow";
+                title.innerHTML = "Đèn Vàng";
+                trafficLight.src = "yellow.png";
+
+            }
+            if(key == "w"){
+                title.style.color = "green";
+                title.innerText = "Đèn Xanh";
+                trafficLight.src = "green.jpeg";
+
+            }
+        }
+
+        window.addEventListener("keydown",changeColor);
+        window.localStorage.setItem("abc",1);
+    </script>
+</body>
+</html>

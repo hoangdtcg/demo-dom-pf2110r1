@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        padding: 10px 20px;
+    }
+</style>
+<body>
+    <button onclick="demoPrompt()">Demo BMI Prompt</button>
+
+    <div>
+        <h1>Đo chỉ số BMI</h1>
+        <p>Nhập chiều cao của bạn:</p>
+        <input type="text" id="chieu-cao" value="0">
+        <p>Nhập cân nặng của bạn</p>
+        <input type="text" id="can-nang" value="0">
+        <br>
+        <br>
+        <button onclick="demoInput()">TÍNH BMI</button>
+        <p>Chỉ số BMI của bạn là:</p>
+        <input type="text" id="bmi" value="0">
+        <p id="bmi2">BMI</p>
+        <p>Kết luận</p>
+        <input type="text" id="ket-luan" value="">
+
+    </div>
+</body>
+<script>
+    function demoPrompt() {
+        let cao = prompt("Nhập chiều cao(m):");
+        let nang = prompt("Nhập cân nặng(kg):");
+
+        let bmi = nang / (cao * cao);
+
+        if(bmi < 18.5){
+            alert("Gầy: "+bmi);
+        }else if(18.5 <= bmi && bmi < 25){
+            alert("Cân đối: "+bmi);
+        }else{
+            alert("Béo phì: "+bmi);
+        }
+    }
+
+    function demoInput() {
+        let chieu_cao = document.getElementById("chieu-cao");
+        let can_nang = document.getElementById("can-nang");
+
+        let bmi = can_nang.value / (chieu_cao.value * chieu_cao.value);
+        document.getElementById("bmi").value = bmi.toFixed(2);
+        document.getElementById("bmi2").innerText = bmi.toFixed(2);
+
+        let ket_luan = "";
+        if(bmi < 18.5){
+            ket_luan = "Gầy";
+        }else if(18.5 <= bmi && bmi < 25){
+            ket_luan = "Cân đối";
+        }else{
+            ket_luan = "Béo phì";
+        }
+
+        document.getElementById("ket-luan").value = ket_luan;
+
+    }
+</script>
+</html>

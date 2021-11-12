@@ -1,0 +1,22 @@
+DOM: Document Object Model
+    - Document : là 1 đối tượng - trang web
+
+        Object (đối tượng): Thực thể ở ngoài đời thật
+            Hải: là 1 đối tượng
+                - Thuộc tính:
+                    - Chiều cao:
+                    - Cân nặng:
+                - Phương thức:
+                    - Chạy
+                    - Hát
+                    - Ăn
+                    - Tán gái
+
+            - Thuộc tính (attribute/property).
+            - Phương thức (Method).
+    - Window: Cửa sổ trình duyệt
+
+    - Đặt tên biến theo camel:
+        - dayofmonth //sai
+        - dayOfMonth 
+        - sumOfNumber

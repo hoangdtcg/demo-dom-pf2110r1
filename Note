@@ -1,0 +1,37 @@
+Biến (Variable):
+    - Là "đại diện" 1 ô nhớ chứa dữ liệu
+    - Dễ dàng thao tác với dữ liệu hơn
+
+
+    - dữ liệu: nhiều loại dữ liệu
+        - số(Number):
+            số nguyên(Integer): 1,2,3,-1,-2...
+            số thập thập phân(Float): 1.2, 2.3
+        - chữ
+            ký tự(char): "a", "b"....
+            chuỗi(string): "hello" 
+        - đúng sai (boolean): true/false (if)
+        - undefined : chưa được định nghĩa
+        - null: rỗng
+
+        - Toán tử: (a và b)
+            - Cộng trừ nhân chia (số) - số học => number
+            - Cộng chuỗi (chữ) => string
+            - So sánh => boolean (== ,=== ,>,<,>=,<=, !=, !==)
+                - == # ===
+            - Gán => ( = )
+
+            - Logic (nhiều toán tử so sánh)
+                - a > b && a > c (&& toán tử logic).
+                - a > b || a > c (|| hoặc).
+                - && # ||
+
+                a > b: biểu thức
+                a, b : toán hạng
+                > : toán tử
+
+- Bài toán:
+    - BMI:
+        - Input: W (kg), H(m)
+        - Kết luận béo, gầy , cân đối 
+
